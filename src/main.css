@@ -1,0 +1,83 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #011823;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.title {
+  font-size: 95px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.currency-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.currency-card {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  max-width: 300px;
+  text-align: center;
+
+  /* Agregamos la animación */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.currency-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #011823;
+}
+
+.currency-card p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #011823;
+}
+
+.container-title{
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.title {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+  
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow:hidden;
+  }
+  
+  @keyFrames typing {
+  
+  from { width: 0}
+  }
+  
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
+
+.last-update{
+  text-align: center;
+}
