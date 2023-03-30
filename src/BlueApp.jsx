@@ -20,7 +20,7 @@ function LastUpdate({ date }) {
     dateStyle: 'short',
     timeStyle: 'medium'
   });
-  return <h1>Última actualización: {formattedDate}</h1>;
+  return <p>Última actualización: {formattedDate}</p>;
 }
 
 export function BlueApp() {
