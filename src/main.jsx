@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BlueApp} from './BlueApp';
+import {CardPrices} from './components/CardPrices';
+import {NavBar} from './components/NavBar';
 import './main.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BlueApp />
+    <NavBar />
+    <CardPrices />
   </React.StrictMode>,
 )

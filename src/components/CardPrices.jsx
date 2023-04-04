@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import dollarBlue from "./img/dollarBlue.png";
-import dollarOff from "./img/dollarOficial.png";
-import euroOff from "./img/euroOficial.png";
-import euroBlue from "./img/euroBlue.png";
+import dollarBlue from "../img/dollarBlue.png";
+import dollarOff from "../img/dollarOficial.png";
+import euroOff from "../img/euroOficial.png";
+import euroBlue from "../img/euroBlue.png";
 
 function CurrencyCard({ name, buy, sell, imgSrc }) {
   return (
@@ -23,7 +23,7 @@ function LastUpdate({ date }) {
   return <p>Última actualización: {formattedDate}</p>;
 }
 
-export function BlueApp() {
+export function CardPrices() {
   const [currencies, setCurrencies] = useState([]);
   const [lastUpdate, setLastUpdate] = useState(null);
 
@@ -63,11 +63,6 @@ export function BlueApp() {
 
   return (
     <div className="container">
-
-      {/*Title*/}
-      <div className='container-title'>
-        <h1 className="title">BlueApp</h1>
-      </div>
 
       {/*Cards*/}
       <div className="currency-list">

@@ -1,0 +1,13 @@
+.nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-logo{
+    justify-items: center;
+    align-items: center;
+}
