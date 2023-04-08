@@ -8,6 +8,31 @@
 }
 
 .nav-logo{
+    display: flex;
     justify-items: center;
     align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-list a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
 }

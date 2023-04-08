@@ -1,6 +1,5 @@
 import '../css/NavBar.css'
 import Logo from "../img/Logo.png";
-
 export function NavBar() {
 
     return (
@@ -10,10 +9,8 @@ export function NavBar() {
                     <img src={Logo} alt="BlueApp" width='200px' />
                 </div>
                 <div className='nav-list'>
-                    <a href="#home" className="active">Inicio</a>
-                    <a href="#calculator">Calculadora de conversion</a>
-                    <a href="#news">Novedades</a>
-                    <a href="#about">Nosotros</a>
+                    <a href="#calculator">Conversion de monedas</a>
+                    <a href="#sueldobruto">Calcuar sueldo bruto</a>
                 </div>
 
             </div>
