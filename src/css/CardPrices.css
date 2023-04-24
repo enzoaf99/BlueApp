@@ -1,4 +1,4 @@
-.currency-card{
+.currency-card {
     background-color: black;
     width: 200px;
     height: 200px;
@@ -9,7 +9,7 @@
     float: left;
 }
 
-.currency-list{
+.currency-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 70%;
@@ -17,7 +17,47 @@
     justify-content: space-between;
 }
 
-.last-update{
+.last-update {
     text-align: center;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .currency-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .currency-card {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 5px;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .currency-list {
+        display: grid;
+        grid-template-columns: auto;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .currency-card {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 5px;
+        float: left;
+    }
 }

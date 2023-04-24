@@ -19,7 +19,7 @@ export function NavBar() {
 
 }
 
-//Muestra popup indicando 
+//Muestra popup indicando que estara proximamente
     window.onload = function leerTexto(){
         let prox1 = document.getElementById('prox1')
         let prox2 = document.getElementById('prox2')
@@ -32,6 +32,6 @@ export function NavBar() {
     }
     
     function mostrarPopUp() {
-        alert("Proximamente disponible")
+        alert("Disponible proximamente")
       }
 
