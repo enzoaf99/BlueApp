@@ -3,6 +3,7 @@ import dollarBlue from "../img/dollarBlue.png";
 import dollarOff from "../img/dollarOficial.png";
 import euroOff from "../img/euroOficial.png";
 import euroBlue from "../img/euroBlue.png";
+import '../css/CardPrices.css'
 
 function CurrencyCard({ name, buy, sell, imgSrc }) {
   return (
@@ -78,9 +79,7 @@ export function CardPrices() {
       </div>
 
       {/*LastUpdate*/}
-      <div>
-      <p className='last-update'>{lastUpdate && <LastUpdate date={lastUpdate} />}</p>
-      </div>
+      <div className='last-update'>{lastUpdate && <LastUpdate date={lastUpdate} />}</div>
     </div>
   );
 };
