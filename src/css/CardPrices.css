@@ -78,6 +78,16 @@
     color: white;
 }
 
+@media only screen and (max-width: 1600px) {
+    .currency-list {
+        grid-template-columns: auto auto;
+    }
+
+    .currency-card {
+        margin: 20px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .currency-list {
         grid-template-columns: auto;
