@@ -8,10 +8,20 @@ import '../css/CardPrices.css'
 function CurrencyCard({ name, buy, sell, imgSrc }) {
   return (
     <div className="currency-card">
-      <h2>{name}</h2>
-      <img src={imgSrc} alt={name} />
-      <p>Compra: ${buy}</p>
-      <p>Venta: ${sell}</p>
+      <div className='currency-title'>
+        <h2>{name}</h2>
+        <img src={imgSrc} alt={name} />
+      </div>
+      <div className='currency-prices'>
+        <div className='buy-price'>
+          <h2>Compra</h2>
+          <p>${buy}</p>
+        </div>
+        <div className='sell-price'>
+          <h2>Venta</h2>
+          <p>${sell}</p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -63,7 +73,7 @@ export function CardPrices() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
 
       {/*Cards*/}
       <div className="currency-list">
