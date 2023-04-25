@@ -10,7 +10,7 @@ export function NavBar() {
                 </div>
                 <div className='nav-list'>
                     <a className='nav-item' id='prox1' href="#calculator">Conversion de monedas</a>
-                    <a className='nav-item' id='prox2' href="#sueldobruto">Calcuar sueldo bruto</a>
+                    <a className='nav-item' id='prox2' href="#sueldobruto">Calcular sueldo bruto</a>
                 </div>
 
             </div>
